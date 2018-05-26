@@ -1,0 +1,33 @@
+{
+  "name": "vue-sunduan-select",
+  "version": "1.0.0",
+  "description": "vue-sunduan-select",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesjianpeng/vue-sunduan-select.git"
+  },
+  "keywords": [
+    "vue",
+    "component",
+    "sunduan",
+    "select"
+  ],
+  "author": "彭涧",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesjianpeng/vue-sunduan-select/issues"
+  },
+  "homepage": "https://github.com/jamesjianpeng/vue-sunduan-select#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
