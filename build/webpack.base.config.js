@@ -17,6 +17,17 @@ const webpackConfig = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.js$/,
+        include: [resolve('src')],
+        // exclude: /node_modules/,
+        use: [
+          {
+            loader: "eslint-loader"
+          }
+        ]
+      },
+      {
         test: /\.vue$/,
         use: [
           {
@@ -26,7 +37,7 @@ const webpackConfig = {
       },
       {
         test: /\.js$/,
-        include: ['./src'],
+        include: [resolve('src')],
         use: [
           {
             loader: 'babel-loader',

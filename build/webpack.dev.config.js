@@ -15,6 +15,10 @@ const config = merge(baseConfig, {
     open: true,
     historyApiFallback: {
       index: path.join(__dirname, 'index.html')
+    },
+    overlay: {
+      warnings: true,
+      errors: true
     }
   },
   plugins: [
