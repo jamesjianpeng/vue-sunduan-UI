@@ -10,8 +10,9 @@ const webpackConfig = {
   target: 'web',
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    filename: '[name].js'
+    path: path.resolve(__dirname, '../dist'), // 控制 index.html 资源目录的初始位置
+    filename: '[name].js',
+    publicPath: 'static' // 资源的访问路径，部署到生产环境下不同的服务器中 需要配置一下
   },
   module: {
     rules: [
@@ -45,7 +46,7 @@ const webpackConfig = {
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       title: 'vue-sunduan-selet',
-      filename: resolve('index.html')
+      filename: 'index.html'
     })
   ]
 }

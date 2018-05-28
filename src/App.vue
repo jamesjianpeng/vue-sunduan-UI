@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      hello: 'hello vue-sunduan-select'
+      hello: 'hello vue-sunduan-select, my name is james q>_<p!! _>o<_ '
     }
   }
 }
