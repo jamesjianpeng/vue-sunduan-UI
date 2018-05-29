@@ -1,16 +1,21 @@
+
 import Vue from 'vue';
 import App from './App.vue';
+import {selectComponent} from './select/index.js';
 
-const [a, b , ...c] = [1, 2 ,3 , 4, 5]
+console.log(selectComponent, '==-==');
 
-var scriptTag = document.body.lastChild
+Vue.use(selectComponent);
 
-var app = document.createElement('div')
-app.id = 'app'
-
-document.body.insertBefore(app, scriptTag)
+const createAppId = function() {
+  const scriptTag = document.body.lastChild;
+  const app = document.createElement('div');
+  app.id = 'app';
+  document.body.insertBefore(app, scriptTag);
+  return '#' + app.id;
+};
 
 new Vue({
-  el: '#app',
-  render:h => h(App)
-})
+  el: createAppId(),
+  render: (h) => h(App),
+});
