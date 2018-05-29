@@ -1,7 +1,7 @@
 
 import Vue from 'vue';
-import App from './App.vue';
-import {selectComponent} from './select/index.js';
+import App from '@/App.vue';
+import {selectComponent} from '@/select/index.js';
 
 console.log(selectComponent, '==-==');
 

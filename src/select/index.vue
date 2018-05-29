@@ -4,7 +4,7 @@
       :multiple="multiple"
       name="num"
       @change="change"
-      :value="selectItem"
+      v-model="getSelectItem"
     >
       <option
         v-for="(item, index) in data"
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'vue-sunduan-select',
+  name: 'vue-sunduan-select-test',
   props: {
     data: {
       type: [Array],
@@ -38,14 +38,25 @@ export default {
     };
   },
   mounted() {
-    this.selectItem = this.data[0].name;
+    this.selectItem = this.data[1].name;
+  },
+  computed: {
+    getSelectItem: {
+      get() {
+        if (!this.selectItem) this.selectItem = this.multiple ? [] : '';
+        return this.selectItem;
+      },
+      set(val) {
+        this.selectItem = val;
+      },
+    },
   },
   methods: {
     change(event) {
       this.$emit('change', this.findItem(this.selectItem));
     },
     findItem(name) {
-      return this.data.find((i) => Object.is(i.name, name)) || null;
+      return this.data.find((i) => Object.is(i.name, name)) || {};
     },
   },
 };

@@ -1,17 +1,15 @@
 <template lang="html">
   <div class="hello">
 
-    <vue-sunduan-select
+    <vue-sunduan-select-test
       :data="listOne"
-      :multiple="true"
       @change="getSelectItem"
     />
 
-    <vue-sunduan-select
+    <!-- <vue-sunduan-select-test
       :data="listTwo"
-      :multiple="true"
       @change="getSelectItem"
-    />
+    /> -->
 
   </div>
 

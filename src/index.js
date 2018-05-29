@@ -1,4 +1,4 @@
-export * from './select/index.vue';
+export * from '@/select/index.vue';
 
 /**
  *
