@@ -16,16 +16,15 @@ const webpackConfig = {
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../src')
+      '@': resolve('src')
     }
   },
   module: {
     rules: [
       {
         enforce: 'pre',
-        test: /\.js$/,
-        include: [resolve('src')],
-        // exclude: /node_modules/,
+        test: /\.(js|vue)$/,
+        include: [resolve('src'), resolve('test')],
         use: [
           {
             loader: "eslint-loader"
@@ -42,7 +41,7 @@ const webpackConfig = {
       },
       {
         test: /\.js$/,
-        include: [resolve('src')],
+        include: [resolve('src'), resolve('test')],
         use: [
           {
             loader: 'babel-loader',
@@ -88,7 +87,8 @@ module.exports = webpackConfig
  *         - rules.test 使用正则的匹配对应的文件名
  *         - rules.include 该 loader 需要解析的文件
  *         - reles.use 在 use 对象中可以添加 新的 loader 和 option
- *
+ *           - reles.use.loader
+ *           - reles.use.option
  * 5. resolve
  *    - resolve.alias 设置路径别名
  *

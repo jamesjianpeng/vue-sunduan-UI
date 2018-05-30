@@ -1,4 +1,10 @@
-export * from '@/select/index.vue';
+export * from '@/select/index.js';
+
+// import {vueSunduanSelectTest} from '@/select';
+//
+// export {
+//   vueSunduanSelectTest,
+// };
 
 /**
  *

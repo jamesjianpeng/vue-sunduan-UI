@@ -1,5 +1,4 @@
 <template lang="html">
-  <div>
     <select
       :multiple="multiple"
       name="num"
@@ -12,7 +11,6 @@
         v-html="item.name"
       />
     </select>
-  </div>
 </template>
 
 <script>
@@ -34,11 +32,14 @@ export default {
   },
   data() {
     return {
-      selectItem: null,
+      selectItem: '',
+      text: 'select',
     };
   },
   mounted() {
-    this.selectItem = this.data[1].name;
+    // console.log(this, 'this');
+    // console.log(this.$el instanceof HTMLSelectElement, 'this.$el');
+    this.selectItem = this.data[0] ? this.data[0].name : '';
   },
   computed: {
     getSelectItem: {

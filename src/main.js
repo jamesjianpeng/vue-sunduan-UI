@@ -1,11 +1,12 @@
 
 import Vue from 'vue';
 import App from '@/App.vue';
-import {selectComponent} from '@/select/index.js';
+import {vueSunduanSelectTest} from '@';
 
-console.log(selectComponent, '==-==');
+Vue.use(vueSunduanSelectTest);
 
-Vue.use(selectComponent);
+// Vue.config.productionTip = false;
+// Vue.config.productionTip = process.env.NODE_ENV !== 'production';
 
 const createAppId = function() {
   const scriptTag = document.body.lastChild;

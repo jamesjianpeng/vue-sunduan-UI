@@ -1,7 +1,7 @@
-import select from './index.vue';
+import select from '@/select/index.vue';
 
-const selectComponent = function(Vue) {
+const vueSunduanSelectTest = function(Vue) {
   Vue.component(select.name, select);
 };
 
-export {selectComponent};
+export {vueSunduanSelectTest};
