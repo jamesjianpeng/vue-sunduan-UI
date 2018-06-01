@@ -12,7 +12,7 @@ install:
   - npm install
 
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter test -- -R spec
+  - npm run test
   - codecov
   - bash <(curl -s https://codecov.io/bash)
   - npm run build
