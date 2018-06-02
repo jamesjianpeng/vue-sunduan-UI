@@ -12,7 +12,9 @@ const webpackConfig = {
   output: {
     path: path.resolve(__dirname, '../dist'), // 控制 index.html 资源目录的初始位置
     filename: '[name].js',
-    publicPath: 'static' // 资源的访问路径，部署到生产环境下不同的服务器中 需要配置一下
+    publicPath: 'static', // 资源的访问路径，部署到生产环境下不同的服务器中 需要配置一下
+    library: 'sunduan-ui', //对外暴露的属性名
+    libraryTarget:'commonjs2' // 挂载到对应的环境下 window['sunduanUtil']
   },
   resolve: {
     alias: {

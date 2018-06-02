@@ -1,7 +1,7 @@
 {
-  "name": "vue-sunduan-UI",
+  "name": "vue-sunduan-ui",
   "version": "1.0.1",
-  "description": "vue-sunduan-select",
+  "description": "vue sunduan UI",
   "main": "index.js",
   "scripts": {
     "build": "node ./build/build.js",
@@ -17,7 +17,7 @@
     "vue",
     "component",
     "sunduan",
-    "select"
+    "UI"
   ],
   "author": "彭涧",
   "license": "MIT",
