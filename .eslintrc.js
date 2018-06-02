@@ -13,6 +13,7 @@ module.exports = {
     "html"
   ],
   "rules": {
+    'prefer-spread': 0
   }
 }
 
