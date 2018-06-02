@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="hello">
 
-    <vue-sunduan-select-test
+    <sd-select-test
       :data="listOne"
       @change="getSelectItem"
     />

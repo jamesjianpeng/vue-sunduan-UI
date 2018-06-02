@@ -1,9 +1,9 @@
 
 import Vue from 'vue';
 import App from '@/App.vue';
-import {vueSunduanSelectTest} from '@';
+import SunduanUI from '@';
 
-Vue.use(vueSunduanSelectTest);
+Vue.use(SunduanUI);
 
 // Vue.config.productionTip = false;
 // Vue.config.productionTip = process.env.NODE_ENV !== 'production';

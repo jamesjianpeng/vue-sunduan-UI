@@ -23,6 +23,7 @@ describe('button', () => {
     Array.apply(null, {length: 10}).map(() => {
       clickEvent(vm);
     });
+
     expect(vm.num).to.equal(10);
   });
 

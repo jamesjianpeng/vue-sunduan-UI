@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'vue-sunduan-select-test',
+  name: 'sd-select-test',
   props: {
     data: {
       type: [Array],

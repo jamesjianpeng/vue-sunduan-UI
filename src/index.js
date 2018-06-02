@@ -1,10 +1,18 @@
-export * from '@/select/index.js';
+import SdSelectTest from './select/index.vue';
 
-// import {vueSunduanSelectTest} from '@/select';
-//
-// export {
-//   vueSunduanSelectTest,
-// };
+const components = {
+  SdSelectTest,
+};
+
+export default (Vue) => {
+  Object.keys(components).map((component) => {
+    Vue.component(components[component].name, components[component]);
+  });
+};
+
+export {
+  SdSelectTest,
+};
 
 /**
  *

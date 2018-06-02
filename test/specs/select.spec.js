@@ -1,10 +1,10 @@
-import {vueSunduanSelectTest} from '@/index.js';
+import {SdSelectTest} from '@/index.js';
 import select from '@/select/index.vue';
 import {getVueExtend} from '../util';
 
-describe('vueSunduanSelectTest type', () => {
-  it('vueSunduanSelectTest shoudle a function', () => {
-    expect(typeof vueSunduanSelectTest).to.equal('function');
+describe('SdSelectTest type', () => {
+  it('SdSelectTest shoudle a object', () => {
+    expect(typeof SdSelectTest).to.equal('object');
   });
 });
 
@@ -86,12 +86,5 @@ describe('select testz', () => {
     const index = 1;
     const optionElement = vm.$el.childNodes[index];
     expect(optionElement instanceof HTMLOptionElement).to.equal(true);
-    // const option = vm.$el.getElementsByTagName('option')[1]
-    // const clickEvent = new window.Event('click')
-    // option.dispatchEvent(clickEvent)
-    // // 需要手动监听更新
-    // vm._watcher.run()
-    //
-    // expect(vm.$el.value).to.contain('two')
   });
 });
