@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --config build/webpack.dev.config.js",
     "unit": "karma start karma.conf.js",
     "test": "npm run unit",
-    "test:mocha": "mocha test/spacs/*.js"
+    "test:mocha": "mocha ./test/specs/*.spec.js"
   },
   "repository": {
     "type": "git",
