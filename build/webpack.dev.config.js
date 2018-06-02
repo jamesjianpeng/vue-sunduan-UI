@@ -41,6 +41,9 @@ const config = merge(baseConfig, {
   ]
 })
 
+delete config.output.library // 在开发,测试环境下 腰包 library 的配置删除掉
+delete config.output.libraryTarget // 在开发，测试环境下 腰包 libraryTarget 的配置删除掉
+
 module.exports = config
 
 /**
