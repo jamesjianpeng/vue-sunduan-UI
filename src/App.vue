@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="hello">
-
+    <span class="test">one</span>
     <sd-select-test
       :data="listOne"
       @change="getSelectItem"
@@ -84,10 +84,13 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="scss">
 .hello {
   font-size: 24px;
   color: #333;
   background: #eee;
+  .test {
+    font-size: 50px;
+  }
 }
 </style>
