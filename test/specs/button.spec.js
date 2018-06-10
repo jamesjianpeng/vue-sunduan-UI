@@ -1,4 +1,4 @@
-import button from '@/button/index.vue';
+import button from '@/components/SdButton/SdButton.vue';
 import {getVueExtend, clickEvent} from '../util';
 
 describe('button', () => {

@@ -1,5 +1,5 @@
 import {SdSelectTest} from '@/index.js';
-import select from '@/select/index.vue';
+import select from '@/components/SdSelect/SdSelect.vue';
 import {getVueExtend} from '../util';
 
 describe('SdSelectTest type', () => {
