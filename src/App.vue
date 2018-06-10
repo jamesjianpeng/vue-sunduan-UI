@@ -1,18 +1,22 @@
 <template lang="html">
-  <div class="hello">
-    <span class="test">one</span>
-    <sd-select-test
-      :data="listOne"
-      @change="getSelectItem"
-    />
-
-    <!-- <vue-sunduan-select-test
-      :data="listTwo"
-      @change="getSelectItem"
-    /> -->
-
+  <div>
+    <div class="">
+      <sd-app-side-drawer>
+        <div slot="sd-app-side-drawer-left">
+          <sd-app-drawer></sd-app-drawer>
+        </div>
+        <div slot="sd-app-toolbar">
+          <sd-app-toolbar></sd-app-toolbar>
+        </div>
+        <div slot="sd-app-content">
+          <sd-app-content></sd-app-content>
+        </div>
+        <div slot="sd-app-side-drawer-left">
+          <sd-app-drawer></sd-app-drawer>
+        </div>
+      </sd-app-side-drawer>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -75,6 +79,9 @@ export default {
       ],
     };
   },
+  created() {
+    console.log(this, '====');
+  },
   methods: {
     getSelectItem(options) {
       const {name, id} = options;
@@ -91,6 +98,11 @@ export default {
   background: #eee;
   .test {
     font-size: 50px;
+  }
+}
+.hello-two {
+  .test {
+    font-size: 10px;
   }
 }
 </style>

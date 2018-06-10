@@ -1,7 +1,17 @@
-import SdSelectTest from './select/index.vue';
+import SdSelectTest from './components/SdSelect/SdSelect.vue';
+import SdApp from './components/SdApp/SdApp.vue';
+import SdAppSideDrawer from './components/SdApp/SdAppSideDrawer.vue';
+import SdAppToolbar from './components/SdApp/SdAppToolbar.vue';
+import SdAppDrawer from './components/SdApp/SdAppDrawer.vue';
+import SdAppContent from './components/SdApp/SdAppContent.vue';
 
 const components = {
   SdSelectTest,
+  SdApp,
+  SdAppSideDrawer,
+  SdAppToolbar,
+  SdAppDrawer,
+  SdAppContent,
 };
 
 export default (Vue) => {
@@ -12,6 +22,11 @@ export default (Vue) => {
 
 export {
   SdSelectTest,
+  SdApp,
+  SdAppSideDrawer,
+  SdAppToolbar,
+  SdAppDrawer,
+  SdAppContent,
 };
 
 /**
